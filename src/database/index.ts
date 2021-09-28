@@ -15,6 +15,6 @@ export const createSequelizeInstance = async () => {
   });
 
   Book.init(Book.definition, { sequelize, timestamps: false });
-
+  sequelize.sync();
   return sequelize;
 };
