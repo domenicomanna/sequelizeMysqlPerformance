@@ -21,7 +21,7 @@ correct hostname, username, and the database name):
 
 ### Performance Testing:
 After importing the test data, we can test the performance of the app.
-1. Start the app if, it's not started already `npm start`
+1. Start the app if it's not started already `npm start`
 2. Open two terminals and in one terminal run: `watch -n 1 time curl http://localhost:3000/helloWorld --silent`, and in the other: `watch -n .5 time curl localhost:3000/longQueryWithSequelize --silent`. Keep this running for a bit of time and take note of the `real` time for the `helloWorld` request
 3. Now, close the app, stop the `watch -n .5 time curl localhost:3000/longQueryWithSequelize --silent` command, **restart the server** and run: `watch -n .5 time curl localhost:3000/longQueryWithRawMysql --silent`. Again, keep this running for a bit of time and take note of the `real` time for the `helloWorld` request
 4. Compare the two `real times`. When hitting the `longQueryWithSequelize` endpoint, the response time of the `helloWorld` endpoint should be significantly slower than when hitting the `longQueryWithRawMysql` endpoint
