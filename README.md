@@ -6,7 +6,7 @@
 2. `cd sequelizeMysqlPerformance`
 3. Install dependencies: `npm install`
 4. Run the build script `npm run build`
-5. Create a `.env` file at the root of the project and fill it in with the following database connection variables:
+5. Create a `.env` file at the root of the project and fill it in with your database connection details:
     ```
     MYSQL_DATABASE=
     MYSQL_DB_HOST=
