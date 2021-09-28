@@ -4,7 +4,7 @@
 
 1. Download the repo: `git clone https://github.com/domenicomanna/sequelizeMysqlPerformance.git sequelizeMysqlPerformance`
 2. `cd sequelizeMysqlPerformance`
-3. Install dependencies: `npm run install`
+3. Install dependencies: `npm install`
 4. Run the build script `npm run build`
 5. Create a `.env` file at the root of the project and fill it in with the following database connection variables:
     ```
