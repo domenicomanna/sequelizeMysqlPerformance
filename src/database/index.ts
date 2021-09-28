@@ -7,6 +7,7 @@ export const createSequelizeInstance = async () => {
     password: process.env.MYSQL_DB_PASSWORD,
     database: process.env.MYSQL_DATABASE,
     host: process.env.MYSQL_DB_HOST,
+    logging: false,
     dialect: "mysql",
     pool: {
       min: 0,
